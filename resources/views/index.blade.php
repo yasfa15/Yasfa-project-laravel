@@ -12,9 +12,11 @@
         <header class="text-center mb-8">
             <h1 class="text-3xl font-bold text-gray-800">Selamat Datang di Kue Kita</h1>
             <p class="text-gray-600">Temukan berbagai pilihan kue tradisional dan modern dengan rasa yang istimewa di sini.</p>
+            <li><a href="{{ route('login') }}" class="text-black">Login</a></li>
+            <li><a href="{{ route('about') }}" class="text-black">About</a></li>
             <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mt-4">
                 Lihat Produk Kami
-            </a>
+           
         </header>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

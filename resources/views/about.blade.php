@@ -7,7 +7,9 @@
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Hello, Im {{ $name}}!!!
   </h1>
+  <p class="text-2x1 p-4">
+    I live in {{$address}}, and my email is {{$email}}
 </body>
 </html>
