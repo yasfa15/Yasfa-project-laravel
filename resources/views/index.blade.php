@@ -3,106 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kue Kita - Platform Penjualan Kue</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Kue Kita</title>
+    @vite('resources/css/app.css')
+    
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Kue Kita</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#products">Produk Kami</a></li>
-                    <li><a href="#tradisional">Kue Tradisional</a></li>
-                    <li><a href="#modern">Kue Modern</a></li>
-                    <li><a href="#contact">Kontak Kami</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home">
-        <div class="container">
-            <h2>Selamat Datang di Kue Kita</h2>
-            <p>Temukan berbagai pilihan kue tradisional dan modern dengan rasa yang istimewa di sini.</p>
-            <a href="#products" class="btn">Lihat Produk Kami</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Kue Kita adalah platform yang menyediakan berbagai macam kue tradisional dan modern. Kami mengutamakan kualitas dan rasa untuk memanjakan lidah para pecinta kue di seluruh Indonesia.</p>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <h2>Produk Kami</h2>
-            <p>Kami menawarkan berbagai macam kue yang dibagi menjadi dua kategori: kue tradisional dan kue modern. Setiap kue dibuat dengan bahan-bahan berkualitas dan resep yang teruji.</p>
-        </div>
-    </section>
-
-    <section id="tradisional">
-        <div class="container">
-            <h2>Kue Tradisional</h2>
-            <p>Rasakan kenikmatan kue tradisional Indonesia yang autentik, seperti klepon, onde-onde, dan kue lapis.</p>
-            <div class="product-list">
-                <div class="product-item">
-                    <h3>Klepon</h3>
-                    <p>Kue beras ketan dengan isian gula merah yang meleleh di mulut.</p>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto my-8 px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Selamat Datang di Kue Kita</h1>
+            <p class="text-gray-600">Temukan berbagai pilihan kue tradisional dan modern dengan rasa yang istimewa di sini.</p>
+            <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mt-4">
+                Lihat Produk Kami
+            </a>
+        </header>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="klepon.jpg" alt="Klepon" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Klepon</h2>
+                    <p class="text-gray-600">Kue beras ketan dengan isian gula merah yang meleleh di mulut.</p>
                 </div>
-                <div class="product-item">
-                    <h3>Onde-onde</h3>
-                    <p>Kue berbentuk bulat dengan kulit berbalut wijen dan isian kacang hijau.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="onde-onde.jpg" alt="Onde-onde" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Onde-onde</h2>
+                    <p class="text-gray-600">Kue berbentuk bulat dengan isian kacang hijau yang manis dan lembut.</p>
                 </div>
-                <div class="product-item">
-                    <h3>Kue Lapis</h3>
-                    <p>Kue berlapis-lapis dengan tekstur lembut dan rasa manis yang pas.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="kue-lapis.jpg" alt="Kue Lapis" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Kue Lapis</h2>
+                    <p class="text-gray-600">Kue berlapis-lapis dengan tekstur lembut dan rasa manis yang pas.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="brownies.jpg" alt="Brownies" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Brownies</h2>
+                    <p class="text-gray-600">Kue cokelat yang padat dengan rasa yang kaya dan tekstur yang fudgy.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="red-velvet.jpg" alt="Red Velvet" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Red Velvet</h2>
+                    <p class="text-gray-600">Kue lembut berwarna merah dengan krim keju yang manis dan lembut.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="cheesecake.jpg" alt="Cheesecake" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800 mb-2">Cheesecake</h2>
+                    <p class="text-gray-600">Kue keju dengan tekstur lembut dan rasa creamy yang memanjakan lidah.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="modern">
-        <div class="container">
-            <h2>Kue Modern</h2>
-            <p>Jelajahi kue-kue modern dengan berbagai rasa dan tampilan menarik, seperti brownies, red velvet, dan cheesecake.</p>
-            <div class="product-list">
-                <div class="product-item">
-                    <h3>Brownies</h3>
-                    <p>Kue cokelat yang padat dengan rasa yang kaya dan tekstur yang fudgy.</p>
-                </div>
-                <div class="product-item">
-                    <h3>Red Velvet</h3>
-                    <p>Kue lembut berwarna merah dengan krim keju yang manis dan lembut.</p>
-                </div>
-                <div class="product-item">
-                    <h3>Cheesecake</h3>
-                    <p>Kue keju dengan tekstur lembut dan rasa creamy yang memanjakan lidah.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Kontak Kami</h2>
-            <p>Jika kamu memiliki pertanyaan atau ingin melakukan pemesanan, silakan hubungi kami melalui:</p>
-            <ul>
-                <li>Email: <a href="mailto:info@kuekita.com">info@kuekita.com</a></li>
-                <li>Telepon: 0812-3456-7890</li>
-                <li>Alamat: Jl. Kue Manis No. 123, Jakarta</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Kue Kita. All rights reserved.</p>
-        </div>
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Kue Kita. All rights reserved.</p>
     </footer>
 </body>
 </html>
